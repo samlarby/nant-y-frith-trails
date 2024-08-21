@@ -16,10 +16,10 @@
                 Clothing
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Casual wear &amp; Essentials</a>
-                <a href="" class="dropdown-item">Shorts and Trousers</a>
-                <a href="" class="dropdown-item">Tops</a>
-                <a href="" class="dropdown-item">All Clothing</a>
+                <a href="{% url 'products' %}?category=casual, essentials" class="dropdown-item">Casual wear &amp; Essentials</a>
+                <a href="{% url 'products' %}?category=shorts_trousers" class="dropdown-item">Shorts and Trousers</a>
+                <a href="{% url 'products' %}?category=tops" class="dropdown-item">Tops</a>
+                <a href="{% url 'products' %}?category=casual, essentials, shorts_trousers, tops" class="dropdown-item">All Clothing</a>
             </div>
         </li>
 
@@ -28,9 +28,9 @@
                 Bike Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Bars &amp; Stems</a>
-                <a href="" class="dropdown-item">Saddles &amp; Mud guards</a>
-                <a href="" class="dropdown-item">All Accessories</a>
+                <a href="{% url 'products' %}?category=bars_stems" class="dropdown-item">Bars &amp; Stems</a>
+                <a href="{% url 'products' %}?category=saddles_guards" class="dropdown-item">Saddles &amp; Mud guards</a>
+                <a href="{% url 'products' %}?category=bars_stems, saddles_guards" class="dropdown-item">All Accessories</a>
             </div>
         </li>
 
@@ -39,10 +39,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Arrivals</a>
-                <a href="" class="dropdown-item">Deals</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals, deals, clearance" class="dropdown-item">All Specials</a>
             </div>
         </li>
     </ul>
