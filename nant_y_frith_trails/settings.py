@@ -29,7 +29,7 @@ SECRET_KEY = 'django-insecure-_a)s&gbvu@y9-gqy3&b4w3y8=27js-_ip!jfw)czeg2x+2ywhe
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-samlarby-nantyfrithtrai-r986hi82qr0.ws-eu116.gitpod.io',
-                'nant-y-frith-trails.herokuapp.com', 'localhost']
+                'nant-y-frith-trails-d1d9d80de887.herokuapp.com', 'localhost']
 
 
 # Application definition
