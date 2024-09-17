@@ -23,10 +23,10 @@ ACCOUNT_EMAIL_VERIFICATION = 'none'
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-_a)s&gbvu@y9-gqy3&b4w3y8=27js-_ip!jfw)czeg2x+2ywhe'
+SECRET_KEY = os.environ.get('SECRET_KEY', '')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = ['8000-samlarby-nantyfrithtrai-r986hi82qr0.ws-eu116.gitpod.io',
                 'nant-y-frith-trails-d1d9d80de887.herokuapp.com', 'localhost']
